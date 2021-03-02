@@ -1,3 +1,685 @@
-<body>
-  <p>Test</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.L.Callis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="bg-black muli">
+    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+        <div class="flex justify-between">
+            <div class="flex items-center p-2 mr-4 no-underline">
+                <img class="max-h-l2 w-auto" src="assets/images/logo_small.png" />
+            </div>
+            <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+                class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+        <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+            <a href="#home" class="fs-m1 mx-3 py-3 indigo no-underline hover-underline">Die Authorin</a>
+            <a href="#alphabet" class="fs-m1 mx-3 py-3 indigo no-underline hover-underline">Das Alphabet der Schöpfung</a>
+            <a href="#jahr" class="fs-m1 mx-3 py-3 indigo no-underline hover-underline">Im Jahr der Finsternis</a>
+            <a href="#contact" class="button bg-white black fw-600 no-underline mx-5 fs-m1">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+        <div class="mx-5 md-mx-l5">
+            <div>
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900">I.L.Callis</h1>
+                <div class="w-100pc md-w-25pc">
+                    <div class="white fs-m1 lh-2 fw-900 opacity-50">
+                        <p>
+                            I. L. Callis ist gebürtige Italienerin. Sie wuchs in Berlin und
+                            Paris auf und studierte in Salzburg Jura. Beim Aktuellen
+                            Dienst des ORF sammelte sie Erfahrung als Journalistin, ehe sie am Institut
+                            für Europäische Rechtsgeschichte zur Zeitgeschichte und zur
+                            nationalsozialistischen Gesetzgebung forschte. Heute arbeitet die promovierte Juristin in
+                            einer Rechtsanwaltskanzlei. Mit ihren ersten beiden Romanen »Das Alphabet der Schöpfung« (2018)
+                            und »Im Jahr der Finsternis« (2019) überzeugte sie sofort als
+                            Expertin für packende, thematisch brisante Thriller.
+
+                            I.L.Callis ist Mitglied der International Thriller Writers und gehört der englischen
+                            Crime Writers´ Association an.
+
+                            Für „Das Alphabet der Schöpfung“ erhielt sie die Literaturförderung des österreichischen
+                            Bundeskanzleramtes, mit „Im Jahr der Finsternis“ war sie in Deutschland für den renommierten
+                            Crime Cologne Award nominiert. 2021 nimmt sie auf Einladung des Landes Nordrhein-Westfalen an
+                            Europas größtem internationalem Krimifestival, dem „Mord am Hellweg“,  teil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+<!--    <section id="features" class="p-10 md-p-l5">-->
+<!--        <div class="flex flex-column md-flex-row mx-auto">-->
+<!--            <div class="w-100pc md-w-40pc">-->
+<!--                <div class="br-8 p-5 m-5">-->
+<!--                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i-->
+<!--                            data-feather="inbox" class="w-l5"></i></div>-->
+<!--                    <h4 class="white fw-600 fs-m3 mb-5">Storage</h4>-->
+<!--                    <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">Lorem ipsum dolor sit amet, consectetur-->
+<!--                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>-->
+<!--                    <a href="#"-->
+<!--                        class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="w-100pc md-w-40pc">-->
+<!--                <div class="br-8 p-5 m-5">-->
+<!--                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i-->
+<!--                            data-feather="cpu" class="w-l5"></i></div>-->
+<!--                    <h4 class="white fw-600 fs-m3 mb-5">Compute</h4>-->
+<!--                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">Lorem ipsum dolor sit amet, consectetur-->
+<!--                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>-->
+<!--                    <a href="#"-->
+<!--                        class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="w-100pc md-w-40pc">-->
+<!--                <div class="br-8 p-5 m-5">-->
+<!--                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i-->
+<!--                            data-feather="database" class="w-l5"></i></div>-->
+<!--                    <h4 class="white fw-600 fs-m3 mb-5">Database</h4>-->
+<!--                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">Lorem ipsum dolor sit amet, consectetur-->
+<!--                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>-->
+<!--                    <a href="#"-->
+<!--                        class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    &lt;!&ndash; slider &ndash;&gt;-->
+<!--    <section class="relative bg-indigo-lightest-10">-->
+<!--        <div id="slider-1">-->
+<!--            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">-->
+<!--                <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>-->
+<!--                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur-->
+<!--                    adipiscing elit, sed do eiusmod tempor </p>-->
+<!--                <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>-->
+<!--            </div>-->
+<!--            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">-->
+<!--                <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>-->
+<!--                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur-->
+<!--                    adipiscing elit, sed do eiusmod tempor </p>-->
+<!--                <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>-->
+<!--            </div>-->
+<!--            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">-->
+<!--                <h2 class="white fs-l3 fw-900">Lorem ipsum dolor sit amet, consectetur</h2>-->
+<!--                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Lorem ipsum dolor sit amet, consectetur-->
+<!--                    adipiscing elit, sed do eiusmod tempor </p>-->
+<!--                <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">BUY NOW</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <ul class="absolute list-none w-100pc flex justify-between top-50pc">-->
+<!--            <li><button-->
+<!--                    class="prev ml-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2 focus-indigo-lighter outline-none"><i-->
+<!--                        data-feather="chevron-left"></i></button></li>-->
+<!--            <li><button-->
+<!--                    class="next mr-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2  focus-indigo-lighter outline-none"><i-->
+<!--                        data-feather="chevron-right"></i></button></li>-->
+<!--        </ul>-->
+<!--    </section>-->
+
+    <!-- big text -->
+    <section class="p-10 md-py-10">
+        <div class="w-100pc md-w-70pc mx-auto py-10">
+            <h2 class="white fs-l2 md-fs-xl1 fw-900 lh-2">
+                „Wohin geht die Menschheit? Die Zukunft liegt in<span class="border-b bc-indigo bw-4"> unseren Händen</span>.“</h2>
+        </div>
+    </section>
+
+    <!-- Das Alphabet der Schöpfung -->
+    <section id="alphabet">
+        <div class="p-10 flex flex-wrap">
+            <div class="w-100pc md-w-75pc">
+                <div class="p-5">
+                    <h4 class="white fw-800 fs-l3 mb-5">Das Alphabet der Schöpfung</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">
+                        Journalist Alexander Lindahl bekommt das lukrative Angebot,
+                        ein Buch über das aufstrebende Gentechnik-Unternehmen Phoenix
+                        zu schreiben. Zunächst ist er von den kühnen Zukunftsvisionen
+                        der Firma fasziniert, alles scheint möglich. Doch dann stößt er
+                        auf ein geheimes Hybrid-Forschungsprogramm, und die glänzende Fassade
+                        stürzt in sich zusammen. Phoenix überschreitet auf eine nie geahnte
+                        Weise die Grenzen der Ethik, und bald merkt Lindahl: Nicht nur sein eigenes
+                        Leben, sondern die Zukunft der menschlichen Spezies steht auf dem Spiel.
+                    </div>
+                    <h4 class="white fw-600 fs-m2 mt-10">Amazon</h4>
+                    <div class="flex indigo-lightest opacity-50">
+                    </div>
+                    <div id="slider-2">
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">I.L.Callis schreibt die Geschichte der Schöpfung neu. Ein Wissenschafts-Thriller über eines der wichtigsten Zukunftsthemen der Menschheit.</p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Viktor Mayer-Schönberger</div>
+                                        <div class="indigo-lightest opacity-20">Zukunftsforscher und Bestsellerautor, University of Oxford</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Zehn Jahre ist Michael Crichton jetzt schon tot, und manchmal fürchtet man, mit ihm sei auch das Format des hochklassigen, spannenden Wissenschaftsthrillers gestorben ... (Das Alphabet der Schöpfung) hat diesen herrlichen, klassischen B-Movie-Auftakt, bei dem verschiedene Figuren und Handlungsstränge in rascher Folge nebeneinander gesetzt werden ... Callis hat das richtige Genre-Personal rekrutiert, das Tempo stimmt, der Spannungsbogen auch.</p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">FAZ am Sonntag</div>
+                                        <div class="indigo-lightest opacity-20">16.9.2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Das Alphabet der Schöpfung ist ein hochaktueller Thriller mit ethischer Sprengkraft ... Was sie überaus packend schildert, ist keine reine Science Fiction.</p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Frankfurter Buchmesse</div>
+                                        <div class="indigo-lightest opacity-20">Buchjournal Fünf, 2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Wer einen Wissenschaftsthriller in der Tradition eines Frank Schätzing ohne dessen ausufernde Geschwätzigkeit schätzt, ist mit Callis´ Buch gut bedient.</p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Stuttgarter Zeitung</div>
+                                        <div class="indigo-lightest opacity-20">4.10.2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Auf Frankensteins Spuren ... Die Gentechnik ist eine der aufregendsten Wissenschaften der Gegenwart. Sie steht aber auch immer wieder im Verdacht, missbraucht zu werden. In diesem Spannungsfeld erzählt der Thriller „Das Alphabet der Schöpfung“ eine packende Geschichte.</p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">focus.de, Kultur</div>
+                                        <div class="indigo-lightest opacity-20">27.11.2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">I.L. Callis hat das spannende und für viele Leser auch unheimliche Thema Gentechnik mit zahlreichen Spannungselementen zu einem rasanten Wissenschaftsthriller verquickt. Der wissenschaftliche Laie ist dabei eine hervorragend gewählte Hauptfigur. Die unterschiedlichen Handlungsstränge sorgen für einen beständig aufrecht erhaltenen Spannungsbogen, in dem auch für Actionszenen Platz ist.</p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Westfälische Nachrichten</div>
+                                        <div class="indigo-lightest opacity-20">21.11.2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Das Alphabet der Schöpfung“ ist ein hoch­aktueller Gentechnik-Thriller mit der Aura von „Frankenstein“: Autorin I. L. Callis hat zwei Jahre lang für ihren Roman recherchiert. Was sie überaus packend schildert, ist keine reine Science-­Fiction: Die schöne neue Welt der Wissenschaft hat längst begonnen, an den genetischen Schrauben der Menschheit zu drehen. Apokalypse Klon.</p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">buchjournal.de</div>
+                                        <div class="indigo-lightest opacity-20">27.11.2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100pc md-w-25pc">
+                    <div class="w-100pc p-10">
+                        <a href="#" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
+                            <img class="w-100pc" src="assets/images/das_alphabet_der_schoepfung.jpeg" alt="">
+                            <p class="fw-600 white fs-m3 mt-3">
+                                Schlagzeile
+                            </p>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Im Jahr der Finsternis -->
+    <section id="jahr">
+        <div class="p-10 flex flex-wrap">
+            <div class="w-100pc md-w-25pc">
+                <div class="w-100pc p-10">
+                    <a href="#" class="block no-underline p-5 br-8 hover-bg-indigo-lightest-10 hover-scale-up-1 ease-300">
+                        <img class="w-100pc" src="assets/images/im_jahr_der_finsternis.jpeg" alt="">
+                        <p class="fw-600 white fs-m3 mt-3">
+                            Nominiert für Crime Cologne 2019
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="w-100pc md-w-75pc">
+                <div class="p-5">
+                    <h4 class="white fw-800 fs-l3 mb-5">Im Jahr der Finsternis</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">Am Vorabend der Wahlen zum Europaparlament. Anwalt Viktor Hellberg regelt den Nachlass seiner Mutter, einer ehemaligen Pressefotografin, als seine sechzehnjährige Tochter verschwindet. Die Entführer verlangen Dokumente aus dem Besitz seiner Mutter, sonst wird das Mädchen sterben. Für Hellberg beginnt eine verzweifelte Suche, die ihn von Berlin bis nach Wien führt. Dabei gerät er in das Netzwerk einer Organisation, die sich die Zerstörung der Demokratie zum Ziel gesetzt hat – und ein Attentat auf einen der populärsten Männer der Welt plant. Hellberg erkennt: Nicht nur das Leben seiner Tochter steht auf dem Spiel, sondern die Zukunft Europas.</div>
+                    <h4 class="white fw-600 fs-m2 mt-10">Amazon</h4>
+                    <div class="flex indigo-lightest opacity-50">
+                    </div>
+                    <div id="slider-3">
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">ie Schriftstellerin I.L. Callis zeigt in ihrem Politthriller „Im Jahr der Finsternis“ durch unterschiedliche Handlungsstränge, wie die aktuelle politische Lage zu einem spannenden Roman genutzt werden kann, der geschickt mit Ängsten und Möglichkeiten spielt.</p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">focus.de</div>
+                                        <div class="indigo-lightest opacity-20">15.5.2019</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">
+                                    Die Autorin erzeugt ... auf mehrfache Weise Tempo und Dynamik ... ein
+                                    exzellenter Schreibstil ... äußerst packender Thriller ... legt ein hochaktuelles
+                                    Buch vor – und das nicht nur, indem sie an vielen Stellen politische Ereignisse
+                                    dieser Tage einbezieht, von Trumps Plänen ... bis zu dem Vorgehen des italienischen
+                                    Innenministers Salvini ... In einem bemerkenswerten Nachwort steckt vor allem eine
+                                    deutliche Warnung. In Anlehnung an den Holocaust-Überlebenden Primi Levi beantwortet
+                                    Callis die Frage, ob sich der Faschismus im heutigen Europa ausbreiten könne, wie
+                                    folgt: „Ja,, vor allem aus einem Grund: weil wir so sicher sind, dass es nicht
+                                    möglich ist.
+                                </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3">
+                                        <img class="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+                                    </div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Theo Körner in Lesart</div>
+                                        <div class="indigo-lightest opacity-20">01.01.2019</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">
+                                    ... ein spannender Thriller, der einmal mehr beweist, dass sich die europäischen
+                                    Hauptstädte mit ihren vielen Eigenheiten und ihrer historischen Tiefe bestens
+                                    eignen als Kulissen für Kriminalgeschichten. Das wussten ja bereits die
+                                    James-Bond-Macher und später die Verantwortlichen der Jason-Bourne-Filme.
+                                    Auch „Im Jahr der Finsternis“ bietet genügend Stoff für eine Verfilmung.
+                                    Wer weiß?
+                                </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3">
+                                        <img class="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+                                    </div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Stuttgarter Zeitung</div>
+                                        <div class="indigo-lightest opacity-20">28.4.2019</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3">
+                                        <img class="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+                                    </div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3">
+                                        <img class="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+                                    </div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3">
+                                        <img class="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+                                    </div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3">
+                                        <img class="br-round" src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+                                    </div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3">
+                            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                <div class="flex items-center my-5">
+                                    <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                                                                                    src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                                    <div class="ml-4 fs-s1">
+                                        <div class="indigo-lightest">Mahnaz Farzin</div>
+                                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- big text -->
+    <section class="p-10 md-py-10">
+        <div class="w-100pc md-w-70pc mx-auto py-10">
+            <h2 class="white fs-l2 md-fs-xl1 fw-900 lh-2">
+                „I.L.Callis schreibt die Geschichte der Schöpfung neu. Ein Wissenschaftsthriller über eines der wichtigsten Zukunftsthemen der Menschheit.“
+                Viktor Mayer-Schönberger, Zukunftsforscher und Bestsellerautor University of Oxford</h2>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
+        <div class="flex flex-wrap">
+            <div class="md-w-25pc mb-10">
+                <img src="assets/images/logo_small.png" class="w-l5" alt="">
+                <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+                    <p>I. L. Callis ist die Definition des deutschen Thrillers und eröffnet Lesern neue Fragen, die
+                        unseren heutigen technologischen Fortschritt und die Weltordnung in ihren Grundfesten erschüttern.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="flex justify-around">
+                    <div class="w-33pc md-px-10 mb-10">
+                        <h5 class="white">Die Authorin</h5>
+                        <ul class="list-none mt-5 fs-s2">
+                            <li class="my-3"><a href="http://www.ineseberl.com" class="white opacity-70 no-underline hover-underline">Ines Eberl-Calic</a></li>
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Kontakt</a></li>
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Media</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-33pc md-px-10 mb-10">
+                        <h5 class="white">Bücher</h5>
+                        <ul class="list-none mt-5 fs-s2">
+                            <li class="my-3">
+                                <a href="https://www.amazon.de/Das-Alphabet-Sch%C3%B6pfung-I-L-Callis/dp/3740804165/
+                                ref=sr_1_2?dchild=1&qid=1613223283&refinements=p_27%3AI.L.+Callis&s=books&sr=1-2"
+                                   class="white opacity-70 no-underline hover-underline">Das Alphabet der Schöpfung
+                                </a>
+                            </li>
+                            <li class="my-3">
+                                <a href="https://www.amazon.de/Im-Jahr-Finsternis-I-L-Callis/dp/374080582X/
+                                ref=sr_1_1?dchild=1&qid=1613223283&refinements=p_27%3AI.L.+Callis&s=books&sr=1-1"
+                                   class="white opacity-70 no-underline hover-underline">Im Jahre der Finsternis
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100pc md-w-25pc">
+<!--                <div class="flex w-75pc md-w-100pc mx-auto">-->
+<!--                    <input type="text"-->
+<!--                        class="input flex-grow-1 bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 br-r-0"-->
+<!--                        placeholder="Email Address">-->
+<!--                    <button class="button bg-indigo indigo-lightest fw-300 fs-s3 br-l-0">Start</button>-->
+<!--                </div>-->
+                <div class="flex justify-around my-8">
+                    <a href="https://www.facebook.com/IL-Callis-878453562170840/" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
+                            data-feather="facebook" class="absolute-center h-4"></i></a>
+                    <a href="https://www.instagram.com/i.l.callis.autor/" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
+                            data-feather="instagram" class="absolute-center h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/1eba441f86.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
+</html>
