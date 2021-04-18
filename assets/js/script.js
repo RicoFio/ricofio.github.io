@@ -20,13 +20,13 @@ $(document).ready(function () {
     });
 
     $('#slider-2').slick({
-        dots: false,
+        dots: true,
         arrows: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3500,
         centerMode: true,
         customPaging: function (slider, i) {
             return '<div class="bg-white br-round w-1 h-1 opacity-50 mt-5" id=' + i + '> </div>'
@@ -39,13 +39,13 @@ $(document).ready(function () {
         }, ]
     });
     $('#slider-3').slick({
-        dots: false,
+        dots: true,
         arrows: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3500,
         centerMode: true,
         customPaging: function (slider, i) {
             return '<div class="bg-white br-round w-1 h-1 opacity-50 mt-5" id=' + i + '> </div>'
