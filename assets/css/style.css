@@ -102,7 +102,11 @@ html, body{
 .work-container {
 	display: flex;
 	align-items: center;
-	justify-content: center
+}
+@media (max-width: 769px) {
+	.work-container {
+		display: block;
+	}
 }
 .left-work{
     padding-top: 90px;
