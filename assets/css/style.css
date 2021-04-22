@@ -99,6 +99,11 @@ html, body{
 20deg
  );
 }
+.work-container {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
 .left-work{
     padding-top: 90px;
     float: left;
@@ -107,6 +112,7 @@ html, body{
 .right-work{
 	float: right;
 	width: 50%;
+	flex-basis: 40%
 }
 @media only screen and (max-width: 1200px) {
 	body{
